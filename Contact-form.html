@@ -1,0 +1,86 @@
+<!--  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Huynh Phan Anh
+  ID: s3891735
+  Acknowledgement: Acknowledge the resources that you use here.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/phone.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/mail.css' rel='stylesheet'>
+    <title>Fahasa|Contact</title>
+</head>
+<body>
+    <!-----------------Navigation Bar------------------>
+    <div class= header>
+        <div class= header-navbar>
+            <div class= header-logo>
+                <img id= logo-pic src="picture\logo-fahasa-trans.png" width= "200px" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Home-page.html">Home</a></li>
+                    <li><a href="Thriller-page.html">Thriller</a></li>
+                    <li><a href="Adventure-page.html">Adventure</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="form">
+      <form action="" method="post">
+        <h1>Contact Us</h1>
+        <div class="info">
+          <label for="Reasons">Contact purpose:</label><br>
+            <select id="Reasons" name="Reasons">
+              <option value="sell">I want to sell books</option>
+              <option value="buy">I want to buy books</option>
+            </select><br>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" value=""><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" value=""><br>
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone" name="phone" value="">
+          <p>Contact Preference</p>
+          <input type="checkbox" id="Email" name="email" value="">
+          <label for="Email"> By Email</label><br>
+          <input type="checkbox" id="Phone" name="Phone" value="">
+          <label for="Phone"> By Phone</label>
+          <p>receive weekly newsletter</p>
+          <input type="radio" id="option" name="option_ref" value="yes" checked>
+          <label for="option">yes</label><br>
+          <input type="radio" id="option" name="option_ref" value="no">
+          <label for="option">no</label><br>
+          <p>Your requests:</p>
+          <textarea name="message" rows="10" cols="30"></textarea>
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class= footer>
+        <div class="footer-logo">
+            <img id=logo-pic src="picture\logo.png" alt="">
+        </div>
+        <div class="contact-form">
+          <a href="Contact-form.html"><button>
+              Send us a form
+          </button></a>
+      </div>
+        <div class="footer-contact">
+          <div class="icon"><i class="gg-phone"></i><p>0123 456 789</p></div>
+          <div class="icon"><i class="gg-facebook"></i><p>Fahasa</p></div>
+          <div class="icon"><i class="gg-mail"></i><p>Fahasa@gmail.com</p></div>
+        </div>
+    </div>
+</body>
+</html>

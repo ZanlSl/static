@@ -1,0 +1,304 @@
+/** RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Huynh Phan Anh
+  ID: s3891735
+  Acknowledgement: Acknowledge the resources that you use here.**/
+*{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*****Navbar design*****/
+.header-navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.header-logo{
+    display: flex;
+    max-width: 18% ;
+    background-color: rgb(240,248,255);
+    flex: auto;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+#logo-pic{
+    max-width: 100%;
+    max-height: 100%;
+    border:  rgba(4, 0, 5);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5%;
+    padding: 5px 5px 5px 5px;
+}
+#book-pic{
+    max-width: 100%;
+    max-height: 100%;
+    border:  rgba(4, 0, 5);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5%;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    padding: 1px;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font: bold;
+}
+.header{
+    max-width: 100%;
+    max-height: 20%;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    border:  rgb(255,117,24) ;
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgba(250,128,114);
+}
+
+/* CSS */
+button{
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+/***responsive for the Navbar***/
+@media screen and (max-width: 960px) {
+    .header-navbar{
+        display: grid;
+        align-items: center;
+    }
+    .header-logo{
+        display: flex;
+        max-width: 100%;
+        max-height: 100%;
+        justify-content: center;
+        justify-self: center;
+        border-radius: 5%;
+    }
+    #logo-pic{
+        padding: 5px 5px 5px 5px;
+    }
+    nav{
+        padding: 10px;
+        text-align: center;
+        max-width: 100%;
+    }
+    nav ul{
+        display: grid;
+    }
+    nav ul li{
+        border:  rgba(4, 0, 5);
+        border-style: solid;
+        border-width: 2px;
+        padding: 2px 2px 2px 2px;
+        margin-bottom: 2px;
+        text-decoration-color: rgb(75,0,130);
+    }    
+}
+.container{
+    max-height: 60%;
+}
+/***categories design***/
+.container{
+    padding: 20px 20px 20px 20px;
+}
+.container-category-1{
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    border-bottom: 2px solid;
+}
+.product-1{
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 20px;
+    border: 2px solid;
+}
+.product-2{
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 20px;
+    border: 2px solid;
+}
+.product-3{
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 20px;
+    border: 2px solid;
+}
+.container-category-2 {
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    border-bottom: 2px solid;
+}
+/**********Details design***********/
+.img-container{
+    display: flex;
+    border:  rgba(4, 0, 5);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5%;
+    margin: 20px 20px 20px 20px;
+    max-width: 50%;
+}
+.product-container{
+    justify-content: space-between;
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid;
+    height: 50%;
+}
+.img-slide{
+    display: flex;
+    margin: 20px 20px 5px 20px;
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 30%;
+}
+#big-pic{
+    border-radius: 5%;
+    max-width: 100%;
+}
+#detail-pic{
+    border:  rgba(4, 0, 5);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 5px 5px 5px 5px;
+}
+.details-container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 5px 20px 5px 20px;
+    max-width: 50%;
+}
+p{
+    max-height: 20%;
+    max-width: 100%;
+}
+.details-container p {
+    overflow: auto;
+    width: 400px;
+    height: 200px;
+}
+.details-container button {
+    margin: 20px 5px 5px 5px;
+}
+/******footer design*******/
+.footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    max-height: 20%;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    border:  rgb(255,117,24) ;
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgba(250,128,114);
+        
+}
+.footer-logo{
+    display: flex;
+    max-height: 100%;
+    width: 30%;
+}
+
+.footer-contact{
+    display: inline-block;
+    height: 50%;
+    width: 40%;
+}
+.icon{
+    display: inline-block;
+    max-width: 40%;
+}
+/************Form design*************/
+form {
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 2px 5px #f5f5f5; 
+    background: #f5f5f5;
+    display: block;
+}
+input, textarea {
+    border: 1px solid rgba(250,128,114);
+}
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+
